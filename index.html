@@ -8,13 +8,16 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <form action="login" method="post">
-            <label for="username"> User Name </label>
-            <input type="text" name="username">
-            <label for="password"> Password</label>
-            <input type="text" name="password">
-            <input type="submit">
+    <form action="login" method="post">
+        <div class="container"></div>
+            <label> User Name </label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+            
+            <label> Password </label>
+            <input type="text" placeholder="Enter Password" name="password" required>
+            
+            <button type="submit"> Login </button>
+        </div>
         <script>
             if(document.location.hash === '#unauthorized') {
              document.write('<div class=â€œunauthorizedâ€>Invalid Username or Password</div>');
@@ -24,6 +27,5 @@
             }
         </script>
         </form>
-    </div>
 </body>
 </html>
