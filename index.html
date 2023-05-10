@@ -15,17 +15,15 @@
             <label for="password"> Password</label>
             <input type="text" name="password">
             <input type="submit">
+        <script>
+            if(document.location.hash === '#unauthorized') {
+             document.write('<div class=â€œunauthorizedâ€>Invalid Username or Password</div>');
+            }
+            else if(document.location.hash === '#error') {
+             document.write('<div class=â€œerrorâ€>An error has occured</div>');
+            }
+        </script>
         </form>
     </div>
-
-    <script>
-        if(document.location.hash === '#unauthorized') {
-     document.write('<div class=â€œunauthorizedâ€>Invalid Username or Password</div>');
-        } else if(document.location.hash === '#error') {
-     document.write('<div class=â€œerrorâ€>An error has occured</div>');
-        }
-    </script>
-     
-
 </body>
 </html>
